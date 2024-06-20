@@ -9,7 +9,24 @@
     <div class="global">
         <h1>Home Page</h1>
         <h3>Parabéns, você se logou</h3>
-        <button onclick="logout()">Deslogar</button>
+        <div class="container-register">
+            <h3>Cadastro de livro</h3>
+            <input type="text" id="titulo" placeholder="Digite o titulo">
+            <input type="text" id="autor" placeholder="Digite o nome do autor">
+            <input type="text" id="genero" placeholder="Digite o genero">
+            <input type="text" id="isbn" placeholder="Digite o isbn">
+            <button onclick="criaLivro()">Cadastrar</button>
+
+
+
+
+
+        </div>
+        <div class="container-exibe-livro" onclick="exibe()">
+            <h3>Livros cadastrados</h3>
+            <p id="lista"></p>
+        </div>
+        <button class="logout" onclick="logout()">Deslogar</button>
     </div>
 
 
